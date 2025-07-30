@@ -1,0 +1,27 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#screen {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, 60%);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: rgb(157, 0, 255);
+  }
+  .parent, #screen {
+    color: white;
+  }
+}/*# sourceMappingURL=media1.css.map */

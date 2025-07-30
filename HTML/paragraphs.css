@@ -1,0 +1,14 @@
+p{
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+    margin: 20px;
+    width: 10px;
+    display: inline;
+    font-family:'Times New Roman', Times, serif;
+    text-align:justify;
+    border-radius: 20px;
+    border: 1px solid red;
+    
+
+}

@@ -1,0 +1,129 @@
+$mobile:576px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.parent{
+    height: 100vh;
+}
+
+.header{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: aqua;
+    &__logo{
+        font-size: 4vw;
+        @__logo{
+            width: 50vw;
+        }
+
+    }
+    &__menu{
+        display: flex;
+        gap: 20px;
+        font-size: 2vw;
+        
+
+    }
+    a{
+        text-decoration: none;
+        font-size: 2vw;
+    }
+
+    
+}
+a:hover{
+    color: red;
+}
+
+.main{
+    height: 80%;
+    display: flex;
+     &__profile{
+        flex: 1;
+
+        background-image: url("./amazon..png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        
+        }
+    
+    &__text{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__1{
+            font-size: 3vw;
+        }
+        &__2{
+            font-size: 3vw;
+        }
+        &__3{
+            font-size: 3vw;
+        }
+        &__4{
+            font-size: 3vw;
+
+        }
+
+    }
+}
+
+
+.footer{
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+@media (max-width:$mobile){
+    .header{
+        
+        justify-content: center;
+        align-items: center;
+
+        &__logo{
+            &__img{
+                width: 65vw;
+                padding: 10px;
+                margin: 10px;
+            }
+        }
+        &__menu{
+            display: none;
+        }
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__profile{
+            width: 200px;
+            height: 260px;
+            border-radius: 100%;
+
+        }
+        &__text{
+            &__1{
+                font-size: 10vw;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+       
+        }
+        }
+    }
+}

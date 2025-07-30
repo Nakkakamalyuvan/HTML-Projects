@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.info{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+    
+        justify-content: fl;
+   
+        gap: 10px;
+
+    }
+    .foodbag{
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    
+}
+
+.order{
+    background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.banner{
+    padding: 10px;
+    margin: 10px;
+}

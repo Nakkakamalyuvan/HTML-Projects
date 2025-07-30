@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>graphic</title>
+
+    </head>
+    <body>
+        <!-- <canvas width="200px" height="200px" style="border: 1px solid red ;"></canvas> -->
+
+        
+
+        <!-- <canvas id="mycanvas" width="200" height="100 " style="border: 1px solid red;"</canvas>
+        <script>
+            let ref = document.getElementById("mycanvas")
+            let ctx = ref.getContext("2d");
+            ctx.moveTo(200,0);
+            ctx.lineTo(0,100);
+            ctx.stroke();
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke(); -->
+
+
+         <!-- <canvas id="mycanvas" width="200" height="100 " style="border: 1px solid red;"</canvas>
+                <script>
+                    let ref = document.getElementById("mycanvas")
+                    let ctx = ref.getContext("2d");
+
+                    ctx.beginPath();
+                    ctx.arc(100,50,40,0,2*Math.PI);
+                    ctx.stroke();
+
+                    ctx.moveTo(0,50);
+                    ctx.lineTo(1000,0);
+                    ctx.stroke(); -->
+
+
+
+
+            <!-- <canvas id="mycanvas" width="200" height="100" style="border: 1px solid red;";></canvas>
+            <script>
+                let ref = document.getElementById("mycanvas");
+                let ctx = ref.getContext("2d");
+                ctx.font="20px arial";
+                ctx.fillText("excelR" ,60,60); -->
+                <!-- ctx.strokeText("ExcelR",60,60);
+                ctx.beginPath();
+                    ctx.arc(100,50,40,0,2*Math.PI);
+                    ctx.stroke();
+            </script> -->
+
+
+        <canvas id="mycanvas" width="200" height="100" style="border: 1px solid red;";></canvas>
+        <script>
+            let ref = document.getElementById("mycanvas");
+            let ctx = ref.getContext("2d");
+
+            let grd = ctx.creatLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"green");
+               
+            ctx.fillStyle=grd;
+            ctx.fillRect(10,10,180,80);
+
+
+        </script>
+
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>

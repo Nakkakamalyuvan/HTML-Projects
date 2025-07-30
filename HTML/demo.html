@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basics</title>
+    </head>
+    <body>
+        <script>
+            document.write("welcome to java script","<br>");
+
+            console.log("debugging soon...!");
+            console.table([10,20,30,40,50,]);
+
+            document.write(10 +"10","<br>");    //1010(concatination)
+            document.write(10 + +"10","<br>");   // 20 if we add ++ to string it will convert string to number
+            document.write(+ "10" +  +"10","<br>");  //20  
+            document.write(10 / "10","<br>");    //1  (/) will convert the string into number
+            document.write(10 * "10","<br>");    //100  (*) will convert the string into number
+            document.write(10 - "10","<br>");    //0  (-) will convert the string into number
+            document.write(10 +"kamal","<br>");  //10 is number and "kamal" is string
+            document.write(10 / "A","<br>");     //NAM( not an number)
+            
+
+            
+
+            // = (ASSIGNMENT)
+            // == (COMPARISION)
+            // === (STRICT COMPARISION)
+
+            document.write(10 == "10","<br>");  // ture
+            document.write(10 === "10","<br>"); // false
+            
+
+            /*
+               what are the difference between == and ===?
+                        ==                              ===
+
+                    called as comparison            called as strict comparion
+                    operator                        operator
+            */
+
+
+            document.write(1 =="one","<br>"); //false
+            document.write(1 ==="one","<br>"); // false
+            document.write(true + true,"<br>"); //2
+            document.write(true +false + true + 1,"<br>"); //3
+            document.write(true / true,"<br>"); //1
+            document.write(true / false,"<br>");  //infinity
+            document.write(100 / false,"<br>");  //infinity
+            document.write(1 + "true","<br>");  //1ture
+            document.write(1 + "true" + "false","<br>");  // 1turefalse
+            document.write(1 + "true" + false,"<br>");  // 1turefalse
+            document.write(0.1+0.2,"<br>"); //0.0.30000000000000004
+            document.write(0.1+0.2 == 0.3,"<br>"); // false
+            document.write(0.1+0.2 == 0.30000000000000004 ,"<br>"); //ture
+            document.write(0.1+0.2 === 0.30000000000000004 ,"<br>");  //ture
+            document.write(0.1+0.2 == "0.30000000000000004" ,"<br>");  //ture
+            document.write(0.1+0.2 === "0.30000000000000004" ,"<br>");  //false
+
+
+
+
+            //BODMAS
+            // B- bracket 
+            // O - of
+            // D - division
+            // M - multiplication
+            // A addition
+            // S- subraction
+
+            document.write(10+5/10-5,"<br>"); // 5.5
+            document.write((10+5)/(10-5),"<br>"); //3
+
+
+
+            document.write(1<2<3,"<br>"); //ture
+            document.write(3>2>1,"<br>"); //false
+
+
+            //ternary operator
+            //condition ? ture block : false block;
+
+            true ? document.write('java',"<br>") : document.write("dot net","<br>"); //java
+            false ? document.write('java',"<br>") : document.write("dot net","<br>"); //dot net
+            3>2>1 ? document.write('java',"<br>") : document.write("dot net","<br>"); // dot net
+            1<2<3 ? document.write('java',"<br>") : document.write("dot net","<br>"); // java
+            
+            
+            
+            
+
+
+
+                  
+
+
+            
+        </script>
+        
+    </body>
+</html>
